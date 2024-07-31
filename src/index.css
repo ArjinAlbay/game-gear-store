@@ -1,14 +1,142 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* index.css */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h2 {
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #adb5bd !important;
+}
+
+/* Carousel */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.carousel-caption h3 {
+  color: #ffffff;
+}
+
+/* Cards */
+.card {
+  border: none;
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #007bff;
+}
+
+footer a:hover {
+  color: #adb5bd;
+}
+
+/* Utility Classes */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg-start {
+  text-align: left !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .card img {
+    height: 200px;
+  }
 }
